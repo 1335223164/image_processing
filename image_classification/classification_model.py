@@ -1,3 +1,4 @@
+import torch
 from torch import nn
 
 
@@ -21,3 +22,8 @@ class ClassificationModel(nn.Module):
     def forward(self, x):
         return self.model(x)
 
+if __name__ == '__main__':
+    model = ClassificationModel()
+    input = torch.randn(10, 3, 64, 64)
+    output = model(input)
+    print(output.shape)
