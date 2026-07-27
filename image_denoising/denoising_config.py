@@ -1,5 +1,6 @@
 # 数据预处理
 IMG_PATH = '../common/dataset/'
+LABEL_PATH = '../common/fashion-labels.csv'
 IMG_H = 64
 IMG_W = 64
 
